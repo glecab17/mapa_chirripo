@@ -84,7 +84,7 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return;
 
   event.respondWith(
-    caches.match(solicitud).then(guardado => {
+    caches.match(solicitud, { ignoreSearch: true }).then(guardado => {
       if (guardado) return guardado;
 
       return fetch(solicitud).then(respuesta => {
