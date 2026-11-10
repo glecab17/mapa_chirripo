@@ -46,6 +46,32 @@ if ('serviceWorker' in navigator) {
         <title></title>
     </head>
     <body>
+		
+<div id="pantalla-bienvenida" style="
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+">
+  <img src="logo_bienvenida_fiebre.png"
+       alt="La Fiebre"
+       style="width: 75%; max-width: 300px;">
+</div>
+
+<script>
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    var bienvenida = document.getElementById('pantalla-bienvenida');
+    if (bienvenida) {
+      bienvenida.style.display = 'none';
+    }
+  }, 1000);
+});
+</script>
+
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
