@@ -1,0 +1,1 @@
+var json_senderos_oficiales_2 = {"type":"FeatureCollection","name":"senderos_oficiales_2","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[]}
