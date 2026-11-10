@@ -102,6 +102,16 @@ var mapaOSM = L.tileLayer(
     }
 );
 mapaOSM.addTo(map);
+			var mapaIGN = L.tileLayer.wms(
+    "https://geo50.snitcr.go.cr/cgi-bin/web?map=hojas50.map",
+    {
+        layers: "HOJAS_50",
+        format: "image/png",
+        transparent: true,
+        version: "1.1.1",
+        attribution: "IGN - SNIT Costa Rica"
+    }
+);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/qgis2web/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
