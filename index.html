@@ -72,7 +72,12 @@ window.addEventListener('load', function () {
   setTimeout(function () {
     var bienvenida = document.getElementById('pantalla-bienvenida');
     if (bienvenida) {
-      bienvenida.style.display = 'none';
+      bienvenida.style.transition = 'opacity 0.3s ease';
+bienvenida.style.opacity = '0';
+
+setTimeout(function () {
+    bienvenida.style.display = 'none';
+}, 300);
     }
   }, 1000);
 });
