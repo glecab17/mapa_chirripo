@@ -1,0 +1,12 @@
+
+{
+  "name": "Mapa Interactivo del Chirripó",
+  "short_name": "Chirripó",
+  "description": "Mapa interactivo del Parque Nacional Chirripó, Costa Rica",
+  "start_url": "/mapa_chirripo/",
+  "scope": "/mapa_chirripo/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#006633",
+  "lang": "es"
+}
